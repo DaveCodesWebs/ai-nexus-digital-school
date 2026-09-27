@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Nexus | Register</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+  <style>
+    :root {
+      --primary: #6e48aa;
+      --secondary: #9d50bb;
+      --dark: #333;
+    }
+   /* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #6e48aa, #9d50bb);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Container Layout */
+.login-container {
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  background-color: #fff;
+  color: #333;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.login-left,
+.login-right {
+  flex: 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-left {
+  background: #f6f6f6;
+}
+
+.login-right {
+  background: #ffffff;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.logo i {
+  margin-right: 0.5rem;
+}
+
+/* Form Elements */
+.login-form {
+  width: 100%;
+}
+
+.login-header h2 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+.login-header p {
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s;
+}
+
+.form-control:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+/* Password toggle */
+.password-container {
+  position: relative;
+}
+
+.password-container .toggle-password {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #999;
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--primary);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-btn:hover {
+  background: var(--secondary);
+}
+
+/* Divider */
+.divider {
+  text-align: center;
+  margin: 2rem 0;
+  color: #aaa;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  height: 1px;
+  background: #ccc;
+  position: absolute;
+  top: 50%;
+  width: 40%;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+/* Social login */
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-btn {
+  width: 40px;
+  height: 40px;
+  background: #f1f1f1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #444;
+  transition: background 0.3s;
+}
+
+.social-btn:hover {
+  background: #ddd;
+}
+
+/* Register link */
+.register-link {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.register-link a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    border-radius: 0;
+  }
+
+  .login-left,
+  .login-right {
+    padding: 2rem;
+  }
+
+  .hero-image {
+    display: none;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-left">
+      <div class="logo" style="margin-bottom: 2rem;">
+        <i class="fas fa-robot"></i>
+        <span>AI Nexus</span>
+      </div>
+      <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Join AI Nexus</h1>
+      <p style="font-size: 1.1rem; opacity: 0.9; max-width: 500px;">Create your account to begin your AI-assisted journey with the tools that power the future.</p>
+      <div class="hero-image" style="margin-top: 3rem; max-width: 400px; align-self: center;">
+        <img src="https://cdn-icons-png.flaticon.com/512/1005/1005141.png" alt="AI Illustration">
+      </div>
+    </div>
+
+    <div class="login-right">
+      <form class="login-form" action="register.php" method="POST">
+        <div class="login-header">
+          <h2>Create Account</h2>
+          <p>Sign up to access AI Nexus</p>
+        </div>
+
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" class="form-control" placeholder="yourusername" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="your@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div class="password-container">
+            <input type="password" id="password" name="password" class="form-control" placeholder="••••••••" required>
+            <i class="fas fa-eye toggle-password" id="togglePassword"></i>
+          </div>
+        </div>
+
+        <button type="submit" class="login-btn">Register</button>
+
+        <div class="divider">or continue with</div>
+
+        <div class="social-login">
+          <a href="#" class="social-btn"><i class="fab fa-google"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-apple"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
+        </div>
+
+        <div class="register-link">
+          Already have an account? <a href="login.htm">Sign in</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+  <script>
+    // Toggle password visibility
+    const togglePassword = document.querySelector('#togglePassword');
+    const password = document.querySelector('#password');
+
+    togglePassword.addEventListener('click', function() {
+      const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+      password.setAttribute('type', type);
+      this.classList.toggle('fa-eye-slash');
+    });
+
+    // Animate form fields
+    document.querySelectorAll('.form-group').forEach((group, index) => {
+      group.style.opacity = 0;
+      group.style.transform = 'translateY(20px)';
+      group.style.animation = `fadeInUp 0.5s ease forwards ${0.3 + (index * 0.1)}s`;
+    });
+  </script>
+</body>
+</html>
